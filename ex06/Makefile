@@ -1,12 +1,12 @@
-NAME	=	harl
+NAME 	=		harlFilter
 
-CC		=	c++
+CC		=		g++
 
-CFLAGS	=	-Wall -Wextra -Werror -std=c++98
+CFLAGS	=		-Wall -Wextra -Werror -std=c++98
 
-SRC		=	Harl.cpp main.cpp
+SRC		=		main.cpp Harl.cpp
 
-OBJS	=	$(SRC:.cpp=.o)
+OBJS	=		$(SRC:.cpp=.o)
 
 
 all: $(NAME)
@@ -17,8 +17,9 @@ $(NAME): $(OBJS)
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
+
 clean:
-		rm -f $(OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 		rm -f $(NAME)
@@ -26,3 +27,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
