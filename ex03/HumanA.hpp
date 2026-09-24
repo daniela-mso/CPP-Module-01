@@ -9,7 +9,8 @@ class	HumanA
 {
 	private:
 		std::string	_name;
-		Weapon		&_weapon; // the reference member i needed, "the HumanA object stores a reference to that weapon"  its were to store the input
+		Weapon		&_weapon; 
+	// the reference member i needed, "the HumanA object stores a reference to that weapon"  its were to store the input
 
 	public:
 		//weapon is a reference parameter to the constructor 

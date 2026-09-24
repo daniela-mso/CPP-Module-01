@@ -16,5 +16,14 @@ int main()
 	}
 	delete[] horde;
 
+	std::cout<< std::endl;
+    horde = zombieHorde(1, "Bob");
+    horde[0].announce();
+    delete[] horde;
+
+	std::cout<< std::endl;
+    horde = zombieHorde(0, "Nobody");
+    delete[] horde;
+
 	return (0);
 }
